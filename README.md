@@ -31,3 +31,12 @@ git clone https://github.com/Henry-Osorto/BCH-API-Integration.git
 ```r
 api_key <- "your_api_key_here"
 
+    Run the script to reproduce the full forecasting workflow.
+
+License
+
+MIT License.
+Author
+
+Henry Osorto
+
