@@ -22,3 +22,12 @@ The workflow is designed for reproducibility and scalability, enabling automated
 ## How to Run
 
 1. Clone the repository:
+git clone https://github.com/Henry-Osorto/BCH-API-Integration.git
+
+
+2. Open the script `bch_forecasting.R` in RStudio.
+
+3. Replace your BCH API key in the code:
+```r
+api_key <- "your_api_key_here"
+
