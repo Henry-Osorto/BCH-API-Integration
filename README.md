@@ -30,8 +30,9 @@ git clone https://github.com/Henry-Osorto/BCH-API-Integration.git
 3. Replace your BCH API key in the code:
 ```r
 api_key <- "your_api_key_here"
+```
 
-    Run the script to reproduce the full forecasting workflow.
+4. Run the script to reproduce the full forecasting workflow.
 
 License
 
