@@ -12,27 +12,41 @@ The workflow is designed for reproducibility and scalability, enabling automated
 - Preprocessing and time series structuring
 - Implementation of six forecasting models
 - Comparative model evaluation and visualization
+- Output saved as a publication-quality PDF figure
 - Integration-ready for reproducible research
 
 ## Requirements
 
 - R (≥ 4.0)
-- R packages: `jsonlite`, `dplyr`, `tibble`, `reshape2`, `ggplot2`, `forecast`, `prophet`, `randomForest`, `xgboost`
+- R packages: `jsonlite`, `dplyr`, `tibble`, `reshape2`, `ggplot2`, `forecast`, `prophet`, `randomForest`, `xgboost`, `glue`
+
+## Languages / Idiomas
+
+Two versions of the forecasting script are available:
+
+- [`bch_forecasting_en.R`](bch_forecasting_en.R): English version of the script with plot titles and captions in English.
+- [`bch_forecasting_es.R`](bch_forecasting_es.R): Versión en español del script, con los títulos y etiquetas del gráfico en español.
 
 ## How to Run
 
 1. Clone the repository:
+
+```bash
 git clone https://github.com/Henry-Osorto/BCH-API-Integration.git
-
-
-2. Open the script `bch_forecasting.R` in RStudio.
-
-3. Replace your BCH API key in the code:
-```r
-api_key <- "your_api_key_here"
+cd BCH-API-Integration
 ```
 
-4. Run the script to reproduce the full forecasting workflow.
+2. Open the script of your choice in RStudio (bch_forecasting_en.R or bch_forecasting_es.R).
+   
+3. Replace the placeholder with your BCH API key:
+api_key <- "your_api_key_here"
+
+4. Run the script. It will:
+- Retrieve inflation data from the BCH API
+- Apply six time series forecasting models
+- Compute error metrics (MAE, RMSE, MAPE)
+- Generate a PDF chart comparing predictions vs. actual inflation
+- Save the chart and a CSV file with error metrics in the working directory
 
 License
 
@@ -40,4 +54,3 @@ MIT License.
 Author
 
 Henry Osorto
-
