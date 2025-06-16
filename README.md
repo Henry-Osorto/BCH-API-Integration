@@ -48,9 +48,10 @@ api_key <- "your_api_key_here"
 - Generate a PDF chart comparing predictions vs. actual inflation
 - Save the chart and a CSV file with error metrics in the working directory
 
-License
+## License
 
 MIT License.
-Author
+
+## Author
 
 Henry Osorto
